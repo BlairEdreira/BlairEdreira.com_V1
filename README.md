@@ -148,3 +148,51 @@ Although I built this site without any templates I did use some interesting tool
 
     .setTween(chartTimeLine)
     .addTo(chartCtrl);
+    
+### [jQuery](https://jquery.com/) - All scripts are written in jQuery
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+### [jQuery Flip](https://nnattawat.github.io/flip/) - Animated project flip tiles
+    <!--Jquery Flip-->
+    <script src="js/jquery.flip.js"></script>
+    
+    EXAMPLE:
+	<div class="project_box" id="card2">
+	<div class="front" style="background-image: url('img/logo_trans.png');"></div>
+	<div class="back">
+	    <h1>Coming Soon!</h1>
+	    <a class="outerSquare" href="">
+		<span class="fa-stack fa-lg">
+		    <i class="fa fa-square fa-stack-2x"></i>
+		    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+		</span>
+	    </a>
+	    <a class="outerSquare" href="">
+		<span class="fa-stack fa-lg">
+		    <i class="fa fa-square fa-stack-2x"></i>
+		    <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+		</span>
+	    </a>
+	    <a class="outerSquare blackOut" id="saIntranet">
+		<span class="fa-stack fa-lg">
+		    <i class="fa fa-square fa-stack-2x"></i>
+		    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+		</span>
+	    </a>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
