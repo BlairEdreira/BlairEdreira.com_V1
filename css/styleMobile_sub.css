@@ -1,0 +1,104 @@
+﻿@media screen and (max-width: 900px) {
+
+    /*About me section*/
+    #aboutMe_intro{
+        margin-left: 0px;
+    }
+
+
+    /*Intro header text loop*/
+    #intro > div.content-wrapper > div{
+        display: none !important;
+    }
+
+    /*Intro logo*/
+    #intro-logo{
+        width: 40vw;
+        left: 40vw;
+    }
+
+    /*nav*/
+    .mobileHide{
+        display: none;
+    }
+
+    .mobileShow{
+        float: right;
+        display: block !important;
+    }
+
+    .navLeft{
+        margin-left: 0px !important;
+        width: 20%;
+    }
+
+/*sections*/
+    .sectionContainers {
+	background-color: #607D8B;
+	padding: 60px 10px;
+	border-bottom: 1px #ebebeb solid;
+	overflow: hidden;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+/*ABOUT ME*/
+#aboutMe-img{
+    width: 250px;
+    height: 250px;
+    margin: 15px 0px;
+}
+
+#aboutMe_intro{
+    text-align: center; 
+    margin: 15px 0px;
+}
+
+/*RESUME SECTION*/
+#resume_container{
+    padding: 60px 10px;
+}
+
+#resume_content{
+    padding: 0px;
+}
+
+/*SKILLS SECTION*/
+#resume_content{
+    padding: 0px;
+    width: initial;
+}
+.chart_container{
+    padding: 0px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+
+.skills_block{
+    width: initial;
+    padding: 0;
+}
+
+/*PROJECTS SECTION*/
+#Project_content{
+    padding: 0px;
+    width: initial;
+}
+.project_container{
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+/*CONTACT SECTION*/
+#Contact_content{
+    padding: 0px;
+    width: initial;
+}
+
+#contact_me, #get_in_touch{
+    width: initial;
+} 
+
+}
