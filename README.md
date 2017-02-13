@@ -152,6 +152,24 @@ Although I built this site without any templates I did use some interesting tool
 ### [jQuery](https://jquery.com/) - All scripts are written in jQuery
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    EXAMPLE:
+    //==================Smooth Scrolling==================
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate(
+					{
+					    scrollTop: target.offset().top
+					}, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 
 ### [jQuery Flip](https://nnattawat.github.io/flip/) - Animated project flip tiles
     <!--Jquery Flip-->
@@ -183,7 +201,41 @@ Although I built this site without any templates I did use some interesting tool
 	</div>
 	</div>
 
-
+### [GreenSock](https://greensock.com/) - GSAP - Animation tweens and sequencing 
+	<!-- GreenSock TweenMax-->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+	
+	EXAMPLE:
+	 //==================Scene NavigationPin==================
+	    var navPinTween = new TimelineMax();
+	    navPinTween.to('#nav', .2,
+		{
+		    backgroundColor: 'rgba(255,255,255,.5)'
+		}).to('.navFont', .1,
+		{
+		    color: 'black'
+		}).to('.navLeft', 0,
+		{
+		    opacity: '1'
+		}, '-=.15');
+	
+### [ScrollMagic](http://scrollmagic.io/) - Scrolling interactions
+    <!-- ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    
+    EXAMPLE:
+	...//
+    var pinNavigationScene = new ScrollMagic.Scene(
+		{
+		    triggerElement: '#nav',
+		    duration: $(window),
+		    triggerHook: 0
+		}).setTween(navPinTween).setPin('#nav',
+		{
+		    pushFollowers: true
+		}).addTo(controller);
 
 
 
