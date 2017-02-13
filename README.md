@@ -237,8 +237,14 @@ Although I built this site without any templates I did use some interesting tool
 		    pushFollowers: true
 		}).addTo(controller);
 
-
-
+## Lessons Learned
+	1. Creating a website from scratch is an adventure. Although I thoroughly enjoy coding, developing and designing, rewriting the wheel is very tedious. I found myself frustrated many times that I had to waste time building sections over and over again. Maybe next time I should look for templates that accomplish what I an trying to do. Start with a base then build on that.
+	2. Plan and outline. I jumped around alot building this website. I suspect that I rebuilt each element 2-3 times to get the look and feel that I wanted. I could have saved time by creating and outline and design before hand. (Although I did just want to dive in a start building and see where it brought me. Kind of like a build as you go and try out some cool stuff).
+	3. Build and revise as you go (AGILE!). Many times I would build out an element fully and then when I went o build the next I would realize that that was not going to work so I would have to start over to make each element fit. Next time I should build out general elements and then add details as I go. 
+	4. CACHE! The bain of developers existance when devloping on test. The number of times I sat there frustrated when a script or style was not working correctly only to find out later that it worked fine it was just an older version that was cached. (Note to self, turn off cache when developing and testing)
+	
+	
+	
 
 
 
